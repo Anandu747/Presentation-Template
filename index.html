@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdn.skulpt.org/skulpt.min.js"></script>
+    <script src="https://cdn.skulpt.org/skulpt-stdlib.js"></script>
+    <title>Presentation Template</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="navbar">
+            <h1>Demo.</h1>
+            <button class="btn">Contact</button>
+        </div>
+        <br>
+    <div id="presentation-container">
+        <div class="slide active" id="slide1">
+            <h1>Welcome to the Presentation</h1>
+            <p>Slide 1: Introduction</p>
+        </div>
+        <div class="slide" id="slide2">
+            <h1>Images</h1>
+            <img src="img/susan-q-yin-2JIvboGLeho-unsplash.jpg" alt="">
+            <p>Slide 2: Overview of the image.</p>
+        </div>
+        <div class="slide" id="slide3">
+            <h1>Chart</h1>
+            <canvas id="myChart" style="width: 800px" height="200px"></canvas>
+        </div>
+        <div class="slide" id="slide4">
+            <h1 style="text-align: center;">Code Blocks</h1>
+            <pre><code class="language-javaScript">
+                function sayHello(){
+                    console.log("hello World")
+                }
+                sayHello()
+            </code></pre>
+            
+        </div>
+        <div class="slide" id="slide5">
+            <h1>Python Code Compiler</h1>
+            <textarea style="width: 800px" height="400px"  id="pythonEditor" cols="30" rows="10">
+               print("Hello, World!")
+            </textarea>
+            <br>
+            <button style="background-color: #1877F2 " id="runPythonBtn"><b style="color: white;">Run Python Code</b></button>
+            <pre id="pythonOutput"></pre>
+        </div>
+        <div class="slide active" id="slide1">
+            <h1>Thank You</h1>
+            <p>Conclusion</p>
+        </div>
+    </div>
+
+    <div id="controls">
+        <button style="background-color: orange" id="prevBtn"><b>Previous</b></button>
+        <button style="background-color: rgb(15, 151, 15);" id="nextBtn"><b style="color: white;">Next</b></button>
+    </div> 
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>
